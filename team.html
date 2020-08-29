@@ -1,41 +1,40 @@
+
 <html>
-    <head>
-        <style>
-            body, html {
-              height: 100%;
-              margin: 0;
-            }
-            .header {
-              position: relative;
-              text-align: center;
-              max-width: 100%;
-              color: white;
-              background-image: url("https://i.imgur.com/lkLq6un.png");
-              height: 50%;
-              left: 200px;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-            .hcentered {
-              position: absolute;
-              top: 50%;
-              font-size: 75px;
-              font-family: "Times New Roman", Times, serif;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-            body {
-                background:#333333
-            }
-        </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-			body {
-			  margin: 0;
-			  font-family: "Lato", sans-serif;
-			}
-			.sidebar {
+    
+    <!-- Tab icon -->
+
+    <link rel="icon" href="https://i.ibb.co/XywD0y6/Shadowian-Emperror-render-1.png">
+    
+    
+    <!-- load icons -->
+    
+    <script src="https://kit.fontawesome.com/29f9977088.js" crossorigin="anonymous"></script>
+    
+    <style>
+        /* set styles for icons */
+        
+        .iconA {
+            width: 50px
+            height 50px
+        }
+        
+        .iconS {
+            color: white;
+            font-size: 1.4em
+        }
+    </style>
+    
+    <!--positions-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style> 
+
+        /* Side bar */
+        
+        .sidebar {
+            overflow-x: hidden;
+            overflow-y: scroll;
 			  margin: 0;
 			  padding: 0;
 			  width: 200px;
@@ -45,38 +44,123 @@
 			  overflow: auto;
 			}
 			.sidebar a {
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: scroll;
 			  display: block;
 			  color: white;
 			  padding: 16px;
 			  text-decoration: none;
 			}
 			.sidebar a.active {
+            overflow-x: hidden;
+            overflow-y: scroll;
 			  background-color: #4CAF50;
 			  color: white;
 			}
 			.sidebar a:hover:not(.active) {
+            overflow-x: hidden;
+            overflow-y: scroll;
 			  background-color: #555;
 			  color: white;
 			}
 			div.content {
+            overflow-x: hidden;
+            overflow-y: scroll;
 			  margin-left: 200px;
 			  padding: 1px 16px;
 			  height: 1000px;
 			}
-			@media screen and (max-width: 700px) {
+        
+        /* footer */
+        
+        .footer {
+            overflow-x: hidden;
+            overflow-y: scroll;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #222;
+          color: white;
+          text-align: center;
+        }
+        /* Textcolors */
+        
+        .belowheader {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            padding-top:32;
+            
+            color: white;
+            margin-left: 200px;
+        }
+        /* Header */
+        
+        .header {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overflow: hidden;
+              position: relative;
+              text-align: center;
+              max-width: 100%;
+              color: white;
+              background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
+              height: 100px;
+              left: 200px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+        
+        .headertxt {
+            overflow-x: hidden;
+            overflow-y: scroll;
+              position: absolute;
+              top: 50%;
+              font-size: 75px;
+              font-family: "Times New Roman", Times, serif;
+              left: 45%;
+              transform: translate(-50%, -50%);
+            }
+        
+        /* Body */
+        
+            body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+                background:#333333;
+                margin: 0;
+            }      
+        
+        /* Wide */
+        
+        @media screen and (max-width: 700px) {
+            
+            .belowheader {
+            overflow-x: hidden;
+            overflow-y: scroll;
+                margin-left: 0px;
+                color: white;
+            }
+            
 			  .sidebar {
+            overflow-x: hidden;
+            overflow-y: scroll;
 				width: 100%;
 				height: auto;
 				position: relative;
 			  }
+            
 			  .header {
+            overflow-x: hidden;
+            overflow-y: scroll;
                   position: relative;
                   text-align: center;
-                  max-width: 100%;
+                    max-width: 700px
                   color: white;
                   left: 0px;
-                  background-image: url("https://i.imgur.com/lkLq6un.png");
-                  height: 50%; 
+                  background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
                   background-position: center;
                   background-repeat: no-repeat;
                 }
@@ -84,34 +168,155 @@
 			  .sidebar a {float: left;}
 			  div.content {margin-left: 0;}
 			}
+        
+        /* Not wide */
+        
 			@media screen and (max-width: 400px) {
+                .belowheader {
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    color: white;
+                    left: 0px;
+                }
                 .header {
+                  overflow-x: hidden;
+                  overflow-y: scroll;
+                    
                   position: relative;
                   text-align: center;
-                  max-width: 100%;
+                  max-width: 400px
                   color: white;
                   left: 0px;
-                  background-image: url("https://i.imgur.com/lkLq6un.png");
+                  background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
                   height: 50%; 
                   background-position: center;
                   background-repeat: no-repeat;
                 }
 			  .sidebar a {
+                overflow-x: hidden;
+                overflow-y: scroll;
 				text-align: center;
 				float: none;
 			  }
 			}
-		</style>
-    </head>
+    </style>
+    
+    
     <section>
-        <div class="sidebar">
+        
+        <div class="sidebar">	
+            
 		  <a href="https://shadoianwar.github.io/i/">Home</a>
 		  <a href="https://shadoianwar.github.io/i/about">About</a>
 		  <a class="active">The Team</a>
-		</div>
+		  <a href="https://discord.gg/rqbe6PM">
+              <icon class="iconS">
+                  <i class="fab fa-discord"></i>
+              </icon>
+          </a>
+        </div>
+        
     </section>
+    
     <section class="header">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="hcentered">The Shadowian War</div>
-	</section>
+        
+        <div class="headertxt">The Team</div>
+	
+    </section>
+    
+    <!--positions-->
+    
+    <style>
+.card {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left: 50px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+    <style>
+        .role {
+            padding-left:10px;
+        }
+    </style>
+    <section class="belowheader">
+        <team style="display: flex; justify-content: center; text-align: center;">
+            <div class="card">
+                <img src="https://i.ibb.co/d5cjmmg/Thomas.jpg" width=75 height=75>
+                <h1>Thomas</h1>
+                <p class="title">Owner</p>
+                <div style="margin: 24px 0;">
+                    <a href="https://www.youtube.com/channel/UC55DSjrftTjNZUiNRhP0rrw"><i class="fa fa-youtube"></i></a> 
+                    <a href="https://twitter.com/ItsThomas0"><i class="fa fa-twitter"></i></a>  
+                 </div>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/dG7kDJz/ben.png" width=75 height=75>
+                <h1>Ben</h1>
+                <p class="title">Owner</p>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/xLr914b/Rizuri-Minimal.jpg" width=75 height=75>
+                <h1>Jay Rizuri</h1>
+                <p class="title">Writing,<br>Site manager,<br>Music</p>
+                <div style="margin: 24px 0;">
+                    <a href="https://www.youtube.com/channel/UCsmzP_YvmxM3zcxJ7TT-H7g"><i class="fa fa-youtube"></i></a> 
+                    <a href="https://twitter.com/JayRizuri"><i class="fa fa-twitter"></i></a>  
+                 </div>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/CWqsmFk/Ice.png" width=75 height=75>
+                <h1>Ice Frost</h1>
+                <p class="title">Helper</p>
+                <div style="margin: 24px 0;">
+                    <a href="https://www.youtube.com/channel/UCP_OURqL5K-ds_BHkd-DZyA"><i class="fa fa-youtube"></i></a> 
+                 </div>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/t4tfPJT/image.png" width=75 height=75>
+                <h1>Hashi</h1>
+                <p class="title">Helper</p>
+                <div style="margin: 24px 0;">
+                    <a href="hhttps://www.youtube.com/c/MaidzCraft/"><i class="fa fa-youtube"></i></a> 
+                    <a href="https://twitter.com/CraftMaidz"><i class="fa fa-twitter"></i></a>
+                 </div>
+            </div>
+        </team>
+    </section>
+    
+    <section class="footer">
+        <span>
+            © 2020 Shadowian Studios
+        </span>
+        
+    </section>
 </html>
