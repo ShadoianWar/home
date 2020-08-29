@@ -1,42 +1,15 @@
 
 <html>
-    <head>
-        <style>
-            body, html {
-              height: 100%;
-              margin: 0;
-            }
-            .header {
-              position: relative;
-              text-align: center;
-              max-width: 100%;
-              color: white;
-              background-image: url("https://i.imgur.com/lkLq6un.png");
-              height: 50%;
-              left: 200px;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-            .hcentered {
-              position: absolute;
-              top: 50%;
-              font-size: 75px;
-              font-family: "Times New Roman", Times, serif;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-            body {
-                background:#333333
-            }
-        </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-			body {
-			  margin: 0;
-			  font-family: "Lato", sans-serif;
-			}
-			.sidebar {
+    
+    <!--positions-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style> 
+
+        /* Side bar */
+        
+        .sidebar {
 			  margin: 0;
 			  padding: 0;
 			  width: 200px;
@@ -64,19 +37,71 @@
 			  padding: 1px 16px;
 			  height: 1000px;
 			}
-			@media screen and (max-width: 700px) {
+        
+        
+        
+        /* Textcolors */
+        
+        .belowheader {
+            
+            
+            color: white;
+            margin-left: 200px;
+        }
+        /* Header */
+        
+        .header {
+            overflow: hidden;
+              position: relative;
+              text-align: center;
+              max-width: 100%;
+              color: white;
+              background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
+              height: 50%;
+              left: 200px;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+        
+        .headertxt {
+              position: absolute;
+              top: 50%;
+              font-size: 75px;
+              font-family: "Times New Roman", Times, serif;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+        
+        /* Body */
+        
+            body {
+                background:#333333;
+                margin: 0;
+            }      
+        
+        /* Wide */
+        
+        @media screen and (max-width: 700px) {
+            
+            .belowheader {
+                margin-left: 0px;
+                color: white;
+            }
+            
 			  .sidebar {
 				width: 100%;
 				height: auto;
 				position: relative;
 			  }
+            
 			  .header {
                   position: relative;
                   text-align: center;
-                  max-width: 100%;
+                    max-width: 700px
                   color: white;
                   left: 0px;
-                  background-image: url("https://i.imgur.com/lkLq6un.png");
+                  background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
                   height: 50%; 
                   background-position: center;
                   background-repeat: no-repeat;
@@ -85,14 +110,22 @@
 			  .sidebar a {float: left;}
 			  div.content {margin-left: 0;}
 			}
+        
+        /* Not wide */
+        
 			@media screen and (max-width: 400px) {
+                .belowheader {
+                    color: white;
+                    left: 0px;
+                }
                 .header {
+                    
                   position: relative;
                   text-align: center;
-                  max-width: 100%;
+                  max-width: 400px
                   color: white;
                   left: 0px;
-                  background-image: url("https://i.imgur.com/lkLq6un.png");
+                  background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
                   height: 50%; 
                   background-position: center;
                   background-repeat: no-repeat;
@@ -102,17 +135,35 @@
 				float: none;
 			  }
 			}
-		</style>
-    </head>
+    </style>
+    
+    
     <section>
-        <div class="sidebar">		
+        
+        <div class="sidebar">	
+            
 		  <a class="active">Home</a>
 		  <a href="https://shadoianwar.github.io/i/about">About</a>
 		  <a href="https://shadoianwar.github.io/i/team">The Team</a>
-		</div>
+		
+        </div>
+        
     </section>
+    
     <section class="header">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div class="hcentered">The Shadowian War</div>
-	</section>
+        
+        <div class="headertxt">The Shadowian War</div>
+	
+    </section>
+    
+    <!--positions-->
+    
+    <section class="belowheader">
+        
+        <span>
+            h
+        </span>
+    
+    </section>
+
 </html>
