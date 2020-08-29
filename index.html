@@ -56,11 +56,12 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style> 
+    <style>
 
         /* Side bar */
         
         .sidebar {
+            font-size: 22px;
             overflow-x: hidden;
             overflow-y: scroll;
 			  margin: 0;
@@ -155,6 +156,7 @@
         /* Body */
         
             body {
+            font-size: 1rem;
             overflow-x: hidden;
             overflow-y: scroll;
                 background: var(--main-bg-color);
@@ -192,12 +194,13 @@
                   background-repeat: no-repeat;
                 }
 
-			  .sidebar a {float: left;}
+			  .sidebar a {
+                  float: left;
+              }
 			  div.content {margin-left: 0;}
 			}
         
         /* Not wide */
-        
 			@media screen and (max-width: 400px) {
                 .belowheader {
                     overflow-x: hidden;
@@ -233,9 +236,9 @@
         
         <div class="sidebar">	
             
-		  <a class="active">Home</a>
+		  <a href="https://shadoianwar.github.io/i/">Home</a>
 		  <a href="https://shadoianwar.github.io/i/about">About</a>
-		  <a href="https://shadoianwar.github.io/i/team">Team</a>
+		  <a class="active">Team</a>
 		  <a href="https://discord.gg/rqbe6PM">
               <icon class="iconS">
                   <i class="fab fa-discord"></i>
