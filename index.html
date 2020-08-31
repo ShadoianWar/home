@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>        
-        
+        <link rel="stylesheet" href="https://unpkg.com/cirrus-ui@0.5.5/dist/cirrus.min.css">
         
         
         <style>
@@ -57,7 +57,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-
+        .topnav {
+			  background-color: #252525;
+        }
         /* Side bar */
         
         .sidebar {
@@ -122,11 +124,11 @@
             padding-top:32;
             
             color: white;
-            margin-left: 200px;
+            padding-left: 200px;
         }
         /* Header */
         
-        .header {
+        .headerr {
             overflow-x: hidden;
             overflow-y: scroll;
             overflow: hidden;
@@ -163,13 +165,12 @@
                 margin: 0;
             }      
         /* Wide */
-        
         @media screen and (max-width: 700px) {
             
             .belowheader {
             overflow-x: hidden;
             overflow-y: scroll;
-                margin-left: 0px;
+                margin-left: -40px;
                 color: white;
             }
             
@@ -180,10 +181,16 @@
 				height: auto;
 				position: relative;
 			  }
+            .headertxt {
+                left: 50%;
+                top: 200px;
+                height: 100%;
+                line-height: 80px;
+            }
             
-			  .header {
+			  .headerr {
             overflow-x: hidden;
-            overflow-y: scroll;
+            overflow-y: hidden;
                   position: relative;
                   text-align: center;
                     max-width: 700px
@@ -202,13 +209,7 @@
         
         /* Not wide */
 			@media screen and (max-width: 400px) {
-                .belowheader {
-                    overflow-x: hidden;
-                    overflow-y: scroll;
-                    color: white;
-                    left: 0px;
-                }
-                .header {
+                .headerr {
                   overflow-x: hidden;
                   overflow-y: scroll;
                     
@@ -230,11 +231,29 @@
 			  }
 			}
     </style>
-    
+
     
     <section>
-        
-        <div class="sidebar">	
+        <div class="header-brand u-hide-desktop topnav">
+                <div style="color:white;" class="nav-item no-hover">
+                    <a><h6 class="title">Home</h6></a>
+                </div>
+                <div style="color:white;"class="nav-item no-hover">
+                    <a><h6 class="title">Team</h6></a>
+                </div>
+                <div class="nav-item no-hover" >
+                    &nbsp&nbsp
+                    <icon class="iconS">
+                        <i class="fab fa-discord"></i>
+                    </icon>
+                </div>
+                <div class="nav-item nav-btn" id="header-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        <div class="sidebar u-hide-mobile">	
             
 		  <a class="active">Home</a>
 		  <a href="https://shadoianwar.github.io/i/about">About</a>
@@ -248,23 +267,24 @@
         
     </section>
     
-    <section class="header">
+    <section class="header headerr ">
         
         <div class="headertxt">The Shadowian War</div>
 	
     </section>
-    
     <!--positions-->
     
-    <section class="belowheader">
+    <section class="belowheader content">
         <synopsis style="display: flex; justify-content: center; text-align: center;">
             <txt>
                 <p style="font-size:32px;">
                     An animated web series
                 </p>
-                <br>
-                <p1>
-                    Synopsis coming soon!
+                <div class="divider"></div>
+                <p1 class="lead u-inline">
+                    The Great War has begun.<br>
+                    The Shadowian Empire started killing and eating humans.<br>
+                    After a long fight, the Shadowians prevailed, and the humans were forced to hide.
                 </p1>
             </txt>
         </synopsis>
