@@ -4,7 +4,13 @@
     <!-- Bootstrap -->
  
     <head>
-
+        <style>
+            .active {
+             background-color: #373;
+                
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +23,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>        
         <link rel="stylesheet" href="https://unpkg.com/cirrus-ui@0.5.5/dist/cirrus.min.css">
         
-        
+
         <style>
             .selector-for-some-widget {
               box-sizing: content-box;
@@ -56,45 +62,34 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+    <style>.IHeader {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overflow: hidden;
+              position: relative;
+              text-align: center;
+              color: white;
+              background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
+              height: 50%;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+        
+        .headertxt {
+              text-align: center;
+              top: 50%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
         .topnav {
 			  background-color: #252525;
         }
         /* Side bar */
-        
-        .sidebar {
-            font-size: 22px;
-            overflow-x: hidden;
-            overflow-y: scroll;
-			  margin: 0;
-			  padding: 0;
-			  width: 200px;
-			  background-color: #252525;
-			  position: fixed;
-			  height: 100%;
-			  overflow: auto;
-			}
-			.sidebar a {
-            text-align: center;
-            overflow-x: hidden;
-            overflow-y: scroll;
-			  display: block;
-			  color: white;
-			  padding: 16px;
-			  text-decoration: none;
-			}
-			.sidebar a.active {
-            overflow-x: hidden;
-            overflow-y: scroll;
-			  background-color: #4CAF50;
-			  color: white;
-			}
-			.sidebar a:hover:not(.active) {
-            overflow-x: hidden;
-            overflow-y: scroll;
-			  background-color: #555;
-			  color: white;
-			}
+        			  background-color: #252525;
 			div.content {
             overflow-x: hidden;
             overflow-y: scroll;
@@ -109,7 +104,6 @@
             overflow-x: hidden;
             overflow-y: scroll;
           position: fixed;
-          left: 0;
           bottom: 0;
           width: 100%;
           background-color: #222;
@@ -122,38 +116,8 @@
             overflow-x: hidden;
             overflow-y: scroll;
             padding-top:32;
-            
             color: white;
-            padding-left: 200px;
         }
-        /* Header */
-        
-        .headerr {
-            overflow-x: hidden;
-            overflow-y: scroll;
-            overflow: hidden;
-              position: relative;
-              text-align: center;
-              max-width: 100%;
-              color: white;
-              background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
-              height: 50%;
-              left: 200px;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-        
-        .headertxt {
-            overflow-x: hidden;
-            overflow-y: scroll;
-              position: absolute;
-              top: 50%;
-              font-size: 75px;
-              font-family: "Times New Roman", Times, serif;
-              left: 45%;
-              transform: translate(-50%, -50%);
-            }
         
         /* Body */
         
@@ -170,107 +134,58 @@
             .belowheader {
             overflow-x: hidden;
             overflow-y: scroll;
-                margin-left: -40px;
                 color: white;
             }
-            
-			  .sidebar {
-            overflow-x: hidden;
-            overflow-y: scroll;
-				width: 100%;
-				height: auto;
-				position: relative;
-			  }
+
             .headertxt {
-                left: 50%;
-                top: 200px;
+              top: 62.5%;
                 height: 100%;
                 line-height: 80px;
             }
-            
-			  .headerr {
+			  .IHeader {
             overflow-x: hidden;
             overflow-y: hidden;
                   position: relative;
                   text-align: center;
                     max-width: 700px
                   color: white;
-                  left: 0px;
                   background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
                   background-position: center;
                   background-repeat: no-repeat;
                 }
-
-			  .sidebar a {
-                  float: left;
-              }
 			  div.content {margin-left: 0;}
 			}
         
-        /* Not wide */
-			@media screen and (max-width: 400px) {
-                .headerr {
-                  overflow-x: hidden;
-                  overflow-y: scroll;
-                    
-                  position: relative;
-                  text-align: center;
-                  max-width: 400px
-                  color: white;
-                  left: 0px;
-                  background-image: url("https://i.ibb.co/YfmycmX/ben-vs-kylowan-pose.png");
-                  height: 50%; 
-                  background-position: center;
-                  background-repeat: no-repeat;
-                }
-			  .sidebar a {
-                overflow-x: hidden;
-                overflow-y: scroll;
-				text-align: center;
-				float: none;
-			  }
-			}
     </style>
 
     
     <section>
-        <div class="header-brand u-hide-desktop topnav">
-                <div style="color:white;" class="nav-item no-hover">
+        <div class="header-brand topnav">
+                <div style="color:white;" class="nav-item active">
                     <a><h6 class="title">Home</h6></a>
                 </div>
-                <div style="color:white;"class="nav-item no-hover">
+                <p>&nbsp&nbsp</p>
+                <div style="color:white;"class="nav-item">
                     <a href="https://shadoianwar.github.io/i/team" style="color:white;"><h6 class="title">Team</h6></a>
                 </div>
-                <div class="nav-item no-hover" >
+                <div class="nav-item" >
                     &nbsp&nbsp
                     <a href="https://discord.gg/rqbe6PM" ><icon href="https://discord.gg/rqbe6PM" class="iconS">
                         <i class="fab fa-discord"></i>
                     </icon>
                     </a>
                 </div>
-                <div class="nav-item nav-btn" id="header-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
-        <div class="sidebar u-hide-mobile">	
-            
-		  <a class="active">Home</a>
-		  <a href="https://shadoianwar.github.io/i/about">About</a>
-		  <a href="https://shadoianwar.github.io/i/team">Team</a>
-		  <a href="https://discord.gg/rqbe6PM">
-              <icon class="iconS">
-                  <i class="fab fa-discord"></i>
-              </icon>
-          </a>
-        </div>
         
     </section>
     
-    <section class="header headerr ">
-        
-        <div class="headertxt">The Shadowian War</div>
+    <style>
+    </style>
+    
+    
+    <section class="IHeader img-stretch">
+
+        <h1 class="headline-4 font-alt font-light uppercase headertxt" style="font-size: 4.6rem;">The Shadowian War</h1>
 	
     </section>
     <!--positions-->
